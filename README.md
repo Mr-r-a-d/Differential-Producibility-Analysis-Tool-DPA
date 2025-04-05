@@ -149,7 +149,7 @@ base/
 - Ensure correct file formats (CSV with 'gene_id' as first column)
 - Verify all prerequisites are present in the base directory
 - Verify the package installations provided in (dpa_env.yml)
-- (Linux) Check file permissions for sfba-glpk (chmod +x ./Linux/sfba-glpk)
+- (Linux) Check file permissions for sfba-glpk (chmod +x JyMet2.3/bin/Linux/sfba-glpk)
 - For Linux and Mac OS get the sfba-glpk executables from "JyMet2.3 > bin" folder
 - Make changes in FBA-KO_Producibility_Up-Down-Matrices.py for 'sfba-glpk.exe' to 'sfba-glpk' for Linux or Mac
 - Monitor system resources during parallel processing 
