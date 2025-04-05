@@ -7,7 +7,7 @@ The DPA Tool performs comprehensive metabolic network analysis through Flux Bala
 
 ## Prerequisites
 
-- Expression data folder (CSV files with 'gene_id' column)
+- Expression data folder (CSV files with 'gene_id' and 'log2FoldChange' column)
 - GSMN-TBupdated_original.sfba (Metabolic model file)
 - Problem_template_FBA.pfile
 - sfba-glpk executable (GLPK solver)
@@ -67,7 +67,7 @@ Metabolite | Condition1_Exp | Condition2_Exp | Condition2 \ Condition1 | Conditi
 
 *User preferences:*
 - Selection of stress condition combinations to analyze
-- P-value, PFP, No. of top ranking metabolites threshold for significant metabolites (default: 0.05)
+- P-value, PFP thresholds and No. of top ranking metabolites for studying significant metabolites
 
 *Note:* In case of replicates specify the expressionfile name with _Rep1, _Rep2, _Rep3, etc. 
 
@@ -80,13 +80,8 @@ Generates comprehensive visualizations and comparative analyses.
 - Venn diagram for all conditions
 - Exports the results in tabular format (csv files)
 - UpSet plots for upregulated and downregulated metabolites
-- Venn diagrams (for conditions < 4, user-configurable)
+- Venn diagrams (for conditions <= 5)
 - Hierarchical clustering and bootstrap analysis
-
-*User preferences:*
-- Threshold values for p-value and pfp (default set to 0.05)
-- Number of top-ranking metabolites to include (default set to 100)
-- Visualization type selection (Upset plot, Venn diagram, or both)
 
 ## Usage
 
@@ -107,7 +102,7 @@ python.exe DPA_Class1.py
    - Option to analyze specific condition combinations or all combinations
 
 4. **Metabolite Selection**
-   - Select metabolites based on: rank, p-value, or PFP value, inout threshold value for p-value and PFP
+   - Select metabolites based on: rank, p-value, or PFP value, input threshold value for p-value and PFP
    - Specify number of top metabolites to extract (default: 100) based on rank
 
 ## Directory Structure
