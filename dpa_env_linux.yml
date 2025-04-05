@@ -1,0 +1,24 @@
+name: DPA_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.12.8
+  - numpy
+  - pandas
+  - matplotlib
+  - rpy2
+  - upsetplot
+  - typing-extensions
+  - dataclasses
+  - r-base=4.3.3
+  - r-pvclust
+  - r-readr
+  - r-viridis
+  - r-scales
+  - r-pheatmap
+  - r-venndiagram
+  - r-gridextra
+  - bioconductor-rankprod
+
