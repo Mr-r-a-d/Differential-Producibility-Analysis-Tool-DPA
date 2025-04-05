@@ -158,6 +158,6 @@ base/
 See `dpa_env.yml` for complete environment specifications.
 
 Core dependencies:
-- Python 3.12.8
-- R 4.3.3
+- Python
+- R
 - rpy2
